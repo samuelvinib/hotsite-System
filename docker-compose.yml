@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  crm_api:
+    container_name: crm-api
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+     - "8000:80"
+    tty: true
+    volumes:
+     - ./:/opt/crm-api
+     - /vendor/
+    command: php artisan serve --host=0.0.0.0 --port=80
+
+networks:
+  rino:
+    external: true
+    name: rino
