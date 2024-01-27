@@ -59,5 +59,7 @@ WORKDIR /opt/crm-api
 
 COPY . .
 
+COPY .env.example .env
+
 RUN composer install
 

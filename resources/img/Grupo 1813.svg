@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.583" height="72" viewBox="0 0 69.583 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_1322" data-name="Retângulo 1322" width="69.583" height="72" fill="none" stroke="#314839" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_1813" data-name="Grupo 1813" transform="translate(-1157 -2415)">
+    <g id="Grupo_1812" data-name="Grupo 1812" transform="translate(1157 2415)">
+      <path id="Caminho_2024" data-name="Caminho 2024" d="M3.3,11.648h9.523l1.709,1.709v9.523L12.822,24.59H3.3L1.59,22.881V13.357Z" transform="translate(1.863 13.648)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+      <g id="Grupo_1811" data-name="Grupo 1811" transform="translate(0 0)">
+        <g id="Grupo_1810" data-name="Grupo 1810" clip-path="url(#clip-path)">
+          <path id="Caminho_2025" data-name="Caminho 2025" d="M11.419,18.981A19.539,19.539,0,1,1,38.736,46.3M27.158.338V7.207M12.047,4.386l3.434,5.949" transform="translate(13.381 0.395)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <line id="Linha_3" data-name="Linha 3" x2="5.951" y2="3.434" transform="translate(14.362 15.843)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <line id="Linha_4" data-name="Linha 4" x1="3.436" y2="5.949" transform="translate(52.214 4.781)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <line id="Linha_5" data-name="Linha 5" x1="5.949" y2="3.434" transform="translate(60.764 15.843)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <line id="Linha_6" data-name="Linha 6" x1="6.411" transform="translate(62.439 30.522)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <line id="Linha_7" data-name="Linha 7" x1="5.949" y1="3.434" transform="translate(60.764 42.633)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <line id="Linha_8" data-name="Linha 8" x1="3.436" y1="5.949" transform="translate(52.214 51.18)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <path id="Caminho_2026" data-name="Caminho 2026" d="M10.276,11.648H19.8l1.709,1.709v9.523L19.8,24.59H10.276L8.567,22.881V13.357Zm15.157,0h9.523l1.709,1.709v9.523L34.957,24.59H25.433l-1.709-1.709V13.357Z" transform="translate(10.039 13.648)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <path id="Caminho_2027" data-name="Caminho 2027" d="M14.531,20.334V29.86l-1.709,1.709H3.3L1.589,29.86V20.334L3.3,18.625h9.523Zm0,15.157v9.523l-1.709,1.709H3.3L1.589,45.015V35.491L3.3,33.782h9.523ZM29.686,20.334V29.86l-1.709,1.709H18.453L16.742,29.86V20.334l1.711-1.709h9.523Zm0,15.157v9.523l-1.709,1.709H18.453l-1.711-1.709V35.491l1.711-1.709h9.523ZM44.841,20.334V29.86l-1.709,1.709H33.608L31.9,29.86V20.334l1.709-1.709h9.523Zm0,15.157v9.523l-1.709,1.709H33.608L31.9,45.015V35.491l1.709-1.709h9.523Z" transform="translate(1.862 21.824)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <rect id="Retângulo_1321" data-name="Retângulo 1321" width="48.69" height="48.69" transform="translate(0.734 22.578)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.675"/>
+          <path id="Caminho_2028" data-name="Caminho 2028" d="M3.268,16.7l6.138-3.825M3.268,20.672l6.138-3.827m9.145-.143,6.138-3.825m-6.14,7.795,6.14-3.827m9.143-.143,6.138-3.825m-6.138,7.795,6.138-3.827M34.1,31.809l6.14-3.825M34.1,35.779l6.14-3.827M34.377,46.916l6.138-3.825m-6.138,7.795,6.138-3.827M18.5,31.809l6.138-3.825M18.5,35.779l6.138-3.827M18.772,46.916l6.138-3.825m-6.138,7.795,6.138-3.825M2.894,31.809l6.138-3.825M2.894,35.779l6.138-3.827M3.165,46.916l6.14-3.825m-6.14,7.795,6.14-3.827" transform="translate(3.391 15.088)" fill="none" stroke="#314839" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.45"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

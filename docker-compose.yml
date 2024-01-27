@@ -11,9 +11,22 @@ services:
     volumes:
      - ./:/opt/crm-api
      - /vendor/
+    networks:
+     - crm_api
     command: php artisan serve --host=0.0.0.0 --port=80
-
+  db:
+      image: mysql:latest
+      container_name: mysql-container
+      environment:
+          - MYSQL_ROOT_PASSWORD=root
+          - MYSQL_DATABASE=laravel
+          - MYSQL_USER=user
+          - MYSQL_PASSWORD=my-secret-pw
+          - MYSQL_PORT=3306
+      ports:
+          - "3306:3306"
+      networks:
+          - crm_api
 networks:
-  rino:
-    external: true
-    name: rino
+  crm_api:
+    name: crm_api
