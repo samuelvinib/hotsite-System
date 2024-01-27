@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="58" viewBox="0 0 310 58">
+  <g id="Grupo_1809" data-name="Grupo 1809" transform="translate(-411 -507)">
+    <rect id="Retângulo_65" data-name="Retângulo 65" width="310" height="58" transform="translate(411 507)" fill="#af5f48"/>
+    <text id="QUERO_MAIS_INFORMAÇÕES" data-name="QUERO MAIS INFORMAÇÕES" transform="translate(449 530)" fill="#fff" font-size="13" font-family="SegoeUI-Light, Segoe UI" font-weight="300"><tspan x="0" y="14">QUERO MAIS INFORMAÇÕES</tspan></text>
+    <g id="Grupo_999" data-name="Grupo 999" transform="translate(653.5 531.4)">
+      <g id="Grupo_750" data-name="Grupo 750" transform="translate(24.1)">
+        <path id="Caminho_628" data-name="Caminho 628" d="M170.6,512.2a.367.367,0,0,1-.1.3L164,519a.5.5,0,0,1-.6,0l-.7-.7a.5.5,0,0,1,0-.6l5.4-5.4-5.4-5.4a.5.5,0,0,1,0-.6l.7-.7a.5.5,0,0,1,.6,0l6.5,6.5C170.6,512,170.6,512.1,170.6,512.2Z" transform="translate(-162.6 -505.5)" fill="#fff"/>
+      </g>
+      <line id="Linha_1" data-name="Linha 1" x1="27" transform="translate(0 7.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
