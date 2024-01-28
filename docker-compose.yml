@@ -5,15 +5,16 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
+    environment:
+        - COMPOSER_ALLOW_SUPERUSER=1
     ports:
      - "8000:80"
     tty: true
     volumes:
      - ./:/opt/crm-api
-     - /vendor/
     networks:
      - crm_api
-    command: php artisan serve --host=0.0.0.0 --port=80
+    command: "/bin/sh /opt/crm-api/scripts/entrypoint.sh"
   db:
       image: mysql:latest
       container_name: mysql-container
