@@ -6,12 +6,13 @@ services:
       context: .
       dockerfile: docker/Dockerfile
     environment:
-        - COMPOSER_ALLOW_SUPERUSER=1
+        - .env.example
     ports:
      - "8000:80"
     tty: true
     volumes:
      - ./:/opt/crm-api
+     - /opt/crm-api/vendor
     networks:
      - crm_api
     command: "/bin/sh /opt/crm-api/scripts/entrypoint.sh"

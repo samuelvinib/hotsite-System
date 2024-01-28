@@ -52,12 +52,9 @@ RUN php -r "unlink('composer-setup.php');"
 RUN composer self-update 2.6.6
 
 RUN mkdir /opt/crm-api
-RUN mkdir /opt/crm-api/bootstrap
 
 WORKDIR /opt/crm-api
 
 COPY . .
-
-COPY .env.example .env
 
 EXPOSE 80
