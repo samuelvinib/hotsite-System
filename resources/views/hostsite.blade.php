@@ -10,9 +10,14 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+
+        <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
     </head>
-    <body class="antialiased">
-        <h1>{{$path_route}}</h1>
+    <body class="container">
+
+        <h1 class="txt">{{$path_route}}</h1>
         @if (view()->exists("empreendimentos.$path_route.header"))
             @include("empreendimentos.$path_route.header")
 
