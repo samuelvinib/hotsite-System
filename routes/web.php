@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => 'empreendimentos'], function () {
+
+    Route::get('/{route}', function ($path_route){
+        try {
+            return view('hostsite')->with('path_route', $path_route);
+        } catch (Exception $exception) {
+            return response($exception)->status(500);
+        }
+    } );
+
 });

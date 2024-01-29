@@ -51,6 +51,17 @@ RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 RUN php -r "unlink('composer-setup.php');"
 RUN composer self-update 2.6.6
 
+# Instale o Node.js
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
+    && apt-get install -y nodejs
+
+# Instale o npm
+RUN apt-get install -y npm
+
+# Verifique se o Node.js e o npm foram instalados corretamente
+RUN node -v
+RUN npm -v
+
 RUN mkdir /opt/crm-api
 
 WORKDIR /opt/crm-api
