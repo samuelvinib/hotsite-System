@@ -1,1 +1,15 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+    font-family: 'Effra';
+    src: url('/assets/fonts/Effra_Trial_Rg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/assets/fonts/GothamMedium.ttf') format('truetype'),
+    url('/assets/fonts/GothamLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kefa';
+    src: url('/assets/fonts/FontsFree-Net-Kefa-Regular-3.ttf') format('truetype');
+}

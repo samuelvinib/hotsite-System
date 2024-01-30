@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'empreendimentos'], function () {
 
-    Route::get('/{route}', function ($path_route){
+    Route::get('/condominio-verde-serrano', function (){
         try {
-            return view('hostsite')->with('path_route', $path_route);
+            return view('home');
         } catch (Exception $exception) {
-            return response($exception)->status(500);
+            return response($exception, 500);
         }
     } );
 
