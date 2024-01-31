@@ -13,3 +13,8 @@
     font-family: 'Kefa';
     src: url('/assets/fonts/FontsFree-Net-Kefa-Regular-3.ttf') format('truetype');
 }
+
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+}
