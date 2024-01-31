@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/test', function () {
     return json_encode(["message"=>"message"]);
 });
+
+Route::post('/lead',[FormController::class, 'store'])->name('form.store');

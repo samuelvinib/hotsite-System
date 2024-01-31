@@ -1,34 +1,35 @@
-document.getElementById('estado').addEventListener('change', function () {
-    let estadoSelecionado = this.value;
+$('#estado').change(function () {
+    let estadoSelecionado = $(this).val();
 
-    fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoSelecionado}/microrregioes`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
+    $.get(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoSelecionado}/microrregioes`)
+        .done(function (data) {
+            let selectCidade = $('#cidade');
+            selectCidade.prop('disabled', false).prop('selectedIndex', 0);
+            selectCidade.find('option').not(':disabled').remove();
 
-            return response.json(); // Retorna a Promise que resolve para o objeto JSON
-        })
-        .then(data => {
-
-            let selectCidade = document.getElementById('cidade');
-            selectCidade.disabled = false;
-            let childNodes = Array.from(selectCidade.children);
-
-            childNodes.forEach(child => {
-                if (child.tagName === 'OPTION' && !child.disabled && !child.selected) {
-                    selectCidade.removeChild(child);
-                }
-            });
-            data.forEach((cidade) => {
-                let option = document.createElement('option');
-                option.value = cidade.id; // Supondo que cada cidade tenha um ID
-                option.text = cidade.nome; // Nome da cidade
-                selectCidade.appendChild(option);
+            $.each(data, function (index, cidade) {
+                let option = $('<option></option>').val(cidade.nome).text(cidade.nome);
+                selectCidade.append(option);
             });
         })
-        .catch(error => {
+        .fail(function (error) {
             console.error('There was a problem with the fetch operation:', error);
         });
-
 });
+
+
+$(document).ready(function(){
+    $('#tel').mask('(00) 00000-0000')
+});
+
+
+// window.addEventListener('DOMContentLoaded', function() {
+//     let captcha = document.querySelector('.rc-anchor-alert');
+//     while( captcha == null){
+//         captcha = document.querySelector('.rc-anchor-alert');
+//     }
+//
+//         captcha.innerHTML = '';
+// })
+
+

@@ -16,38 +16,41 @@
                     o conforto e o luxo.</p>
             </div>
             <div class="form__formulario ms-4 p-3 mt-5 col-md-12">
-                <form class="pb-3">
+                <form class="pb-3" method="POST" action="{{ route('form.store') }}">
+                    @csrf
                     <h2 class="text-light fs-5 text-center mb-3">Cadastre-se para falar<br>
                         com um especialista.</h2>
                     <div class="mb-2">
-                        <input type="text" class="form-control w-100 fs-5" id="name" aria-describedby="name"
+                        <input required type="text" class="form-control w-100 fs-5" id="name" aria-describedby="name"
+                               name="name"
                                placeholder="NOME">
                     </div>
                     <div class="mb-2 d-flex">
-                        <input type="email" class="form-control me-1" id="exampleInputEmail1"
-                               aria-describedby="emailHelp" placeholder="E-MAIL">
-                        <input type="email" class="form-control ms-1" id="exampleInputEmail1"
-                               aria-describedby="emailHelp" placeholder="TELEFONE">
+                        <input name="email" required type="email" class="form-control me-1" id="email"
+                               aria-describedby="email" placeholder="E-MAIL">
+                        <input required type="text" class="form-control ms-1" id="tel"
+                               aria-describedby="tel" placeholder="TELEFONE">
                     </div>
                     <div class="mb-2 d-flex">
-                        <select id="estado" class="form-select me-1" aria-label="ESTADO" style="color:#595c5f;" >
+                        <select name="state" required id="estado" class="form-select me-1" aria-label="ESTADO" style="color:#595c5f;" >
                             <option value="" disabled selected>ESTADO</option>
                             @foreach ($estados as $estado)
                                 <option value="{{ $estado['sigla'] }}">{{ $estado['nome'] }}</option>
                             @endforeach
                         </select>
-                        <select disabled id="cidade" class="form-select ms-1" aria-label="CIDADE" style="color:#595c5f;">
+                        <select name="city" required disabled id="cidade" class="form-select ms-1" aria-label="CIDADE" style="color:#595c5f;">
                             <option value="" disabled selected>CIDADE</option>
                         </select>
                     </div>
                     <div class="mb-2 d-flex">
-                        <textarea type="text" class="form-control form__text" id="exampleInputEmail1" rows="5"
+                        <textarea name="message" required type="text" class="form-control form__text" id="exampleInputEmail1" rows="5"
                                   aria-describedby="emailHelp" placeholder="MENSAGEM"></textarea>
                     </div>
-                    <div class="mb-2 d-flex pb-5">
-                        <input type="email" class="form-control me-1" id="exampleInputEmail1"
-                               aria-describedby="emailHelp" placeholder="re capthca">
-                        <button type="submit" class="btn btn-primary d-flex align-items-center px-4">QUERO MAIS
+                    <div class="mb-2 d-flex pb-5 align-items-stretch">
+                        <div class="position-absolute">
+                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-theme="light"  style="transform:scale(0.8);transform-origin:0 0;" ></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-flex align-items-center px-3 ms-auto">QUERO MAIS
                             INFORMAÇÕES {!! config('images.icons.arrow-right') !!}</button>
                     </div>
                 </form>
@@ -136,4 +139,6 @@
             overflow: scroll;
         }
     }
+
+
 </style>

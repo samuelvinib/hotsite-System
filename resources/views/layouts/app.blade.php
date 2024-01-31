@@ -7,6 +7,8 @@
 
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
+    <script src="{{asset('assets/js/jquery.js')}}"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
 
 </head>
 <body class="position-relative">
@@ -29,4 +31,5 @@
 </body>
 <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('assets/js/app.js')}}"></script>
+<script src="{{asset('assets/js/jquery.mask.js')}}"></script>
 </html>
