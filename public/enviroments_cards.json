@@ -1,0 +1,42 @@
+[
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_RESTAURANTE_LD.jpg",
+        "description": "Bar e restaurante"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_SALAO CHA_LD.jpg",
+        "description": "Casa de chá"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_SALA IOGA_LD.jpg",
+        "description": "Salas de ioga e meditação"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_SPA OFUROS_LD.jpg",
+        "description": "Spa e massagem"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_FITNESS CENTER_LD1.jpg",
+        "description": "Fitness Center"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_ATELIER MULTIUSO-LD.jpg",
+        "description": "Ateliê"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_SALA DE JOGOS_LD.jpg",
+        "description": "Sala de jogos"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_BRINQUEDOTECA_LD.jpg",
+        "description": "Brinquedoteca"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_PISCINA BAR_LD.jpg",
+        "description": "Piscina"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/MDR_COWORKING_LD.jpg",
+        "description": "Coworking"
+    }
+]

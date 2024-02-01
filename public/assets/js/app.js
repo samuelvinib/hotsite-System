@@ -23,13 +23,9 @@ $(document).ready(function(){
 });
 
 
-// window.addEventListener('DOMContentLoaded', function() {
-//     let captcha = document.querySelector('.rc-anchor-alert');
-//     while( captcha == null){
-//         captcha = document.querySelector('.rc-anchor-alert');
-//     }
-//
-//         captcha.innerHTML = '';
-// })
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
-
+myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})

@@ -27,6 +27,12 @@
     @component('components.description-section')
     @endcomponent
 
+    @component('components.environments')
+    @endcomponent
+
+    @component('components.structure')
+    @endcomponent
+
     @yield('content')
 </main>
 

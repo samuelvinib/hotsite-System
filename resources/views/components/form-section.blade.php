@@ -3,7 +3,7 @@
     $estados = Http::get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/')->json();
 @endphp
 
-<div class="form-section">
+<div class="form-section" id="form">
     @if(session('message'))
         <div class="alert alert-warning alert-success fade show position-fixed" role="alert" style="top:20px;z-index: 6; right: 20px">
             <strong>{{ session('message') }}</strong>
@@ -14,7 +14,7 @@
         <div class="form-section__background-black"></div>
         <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 row">
             <div class="form__text-container col-md-12">
-                <h2 class="form__h2 ">Bem-vindo ao Residencial<br>Verde Sereno - Oásis<br>Ecológico de Luxo
+                <h2 class="form__h2 fw-bold">Bem-vindo ao Residencial<br>Verde Sereno - Oásis<br>Ecológico de Luxo
                 </h2>
                 <p class="form__p">No coração da natureza exuberante, ergue-se o Residencial Verde Sereno, um
                     condomínio de luxo que

@@ -4,7 +4,8 @@ return [
         "images"=>[
             'logo' => file_get_contents(public_path('/assets/img/condominio-verde-serrano/media/logo.svg')),
             'background-form' => '/assets/img/condominio-verde-serrano/media/MDR_FITNESS CENTER_LD.jpg',
-            'background-description' => '/assets/img/condominio-verde-serrano/media/img-lp.jpg'
+            'background-description' => '/assets/img/condominio-verde-serrano/media/img-lp.jpg',
+            'image-structure' => '/assets/img/condominio-verde-serrano/media/380e530098fe700f7a79ff822985940d.jpg',
         ],
         "icons"=>[
             'arrow-right' => file_get_contents(public_path('/assets/img/condominio-verde-serrano/icons/arrow-right.svg')),
