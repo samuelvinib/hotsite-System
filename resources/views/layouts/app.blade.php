@@ -24,6 +24,9 @@
     @component('components.contact')
     @endcomponent
 
+    @component('components.description-section')
+    @endcomponent
+
     @yield('content')
 </main>
 
