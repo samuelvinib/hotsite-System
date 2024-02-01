@@ -1,8 +1,9 @@
 @php
-    use Illuminate\Support\Facades\Http;$estados = Http::get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/')->json();
+    use Illuminate\Support\Facades\Http;
+    $estados = Http::get('https://servicodados.ibge.gov.br/api/v1/localidades/estados/')->json();
 @endphp
 
-<div class="form-section__bg-image">
+<div class="form-section">
     @if(session('message'))
         <div class="alert alert-warning alert-success fade show position-fixed" role="alert" style="top:20px;z-index: 6; right: 20px">
             <strong>{{ session('message') }}</strong>
@@ -53,8 +54,8 @@
                                   aria-describedby="emailHelp" placeholder="MENSAGEM"></textarea>
                     </div>
                     <div class="mb-2 d-flex pb-5 align-items-stretch">
-                        <div class="position-absolute">
-                            <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-theme="light"  style="transform:scale(0.8);transform-origin:0 0;" ></div>
+                        <div class="position-relative d-none d-sm-none d-md-block">
+                            <div class="g-recaptcha position-absolute" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-theme="light"  style="transform:scale(0.8);transform-origin:0 0;" ></div>
                         </div>
                         <button type="submit" class="btn btn-primary d-flex align-items-center px-3 ms-auto">QUERO MAIS
                             INFORMAÇÕES {!! config('images.icons.arrow-right') !!}</button>
@@ -66,7 +67,7 @@
 </div>
 
 <style>
-    .form-section__bg-image {
+    .form-section {
         background-image: url("{{url('/').config('images.images.background-form')}}");
         height: 100vh;
         background-size: auto 100vh;
@@ -113,19 +114,19 @@
         width: 532px;
     }
 
-    ::placeholder, select {
+    .form-section ::placeholder, select {
         font-size: 14px !important;
         font-family: 'Gotham', sans-serif;
     }
 
-    button[type='submit'] {
+    .form-section button[type='submit'] {
         height: 58px;
         font-size: 13px;
         white-space: nowrap;
         background: #AF5F48;
     }
 
-    button[type='submit'] svg {
+    .form-section button[type='submit'] svg {
         margin-left: 10px;
         color: #fff;
         width: 40px;
