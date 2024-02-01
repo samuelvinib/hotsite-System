@@ -3,6 +3,12 @@
 @endphp
 
 <div class="form-section__bg-image">
+    @if(session('message'))
+        <div class="alert alert-warning alert-success fade show position-fixed" role="alert" style="top:20px;z-index: 6; right: 20px">
+            <strong>{{ session('message') }}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <div class="form-section__background-black-container w-100 h-100">
         <div class="form-section__background-black"></div>
         <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 row">
