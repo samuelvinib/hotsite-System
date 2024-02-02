@@ -1,0 +1,30 @@
+[
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/mountain (1).jpg",
+        "description": "3º melhor\nclima do\nmundo "
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/lion (1).jpg",
+        "description": "Zoo park"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/cheers (1).jpg",
+        "description": "cervejarias\nartesanais"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/food-tray.jpg",
+        "description": "Gastronomia\nDiversificada"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/tucano.jpg",
+        "description": "Bioparque "
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/show.jpg",
+        "description": "eventos\nculturais"
+    },
+    {
+        "image": "/assets/img/condominio-verde-serrano/media/morango.jpg",
+        "description": "Agroturismo"
+    }
+]

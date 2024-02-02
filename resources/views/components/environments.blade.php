@@ -1,5 +1,5 @@
 @php
-    $cardsJson = file_get_contents('enviroments_cards.json');
+    $cardsJson = file_get_contents('environments_cards.json');
 
     $cards = json_decode($cardsJson, true);
 @endphp
@@ -17,7 +17,7 @@
             </div>
         @endforeach
     </div>
-    <a href="#form"><button href="#form" type="submit" class="btn btn-primary px-5 mx-auto text-center d-block">QUERO MAIS
+    <a href="#form" class="text-decoration-none"><button href="#form" type="submit" class="btn btn-primary px-5 mx-auto text-center d-block">QUERO MAIS
             INFORMAÇÕES {!! config('images.icons.arrow-right') !!}</button></a>
 </div>
 

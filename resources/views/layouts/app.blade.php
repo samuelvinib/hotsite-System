@@ -33,6 +33,12 @@
     @component('components.structure')
     @endcomponent
 
+    @component('components.house-plan')
+    @endcomponent
+
+    @component('components.tourism')
+    @endcomponent
+
     @yield('content')
 </main>
 

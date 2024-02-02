@@ -21,9 +21,9 @@
             </div>
         @endforeach
     </div>
-    <div class="row">
+    <div class="row bg-white">
         <img class="image-fluid col-md-6 col-12 mb-3" src="{{config('images.images.image-structure')}}" alt="{{config('images.images.image-structure')}}">
-        <div class="col-md-6 col-12 mb-3">
+        <div class="col-md-6 col-12 my-3">
             <h2 class="text-center mb-4">AQUI A SUSTENTABILIDADE COM A<br>
                 NATUREZA E COM O PRÓXIMO É<br>
                 UM COMPROMISSO
@@ -31,7 +31,7 @@
             <p class="text-center fs-5">O Verde Serrano traz uma arquitetura incorporada na paisagem, num projeto que respeita a topografia original e preserva a vegetação nativa, além de cuidar do meio-ambiente com iniciativas sustentáveis.</p>
             <div class="row justify-content-around mt-5 px-5 align-items-stretch">
                 @foreach($cards_secondSection as $card)
-                    <div class="card col-sm col-md-4 col-3 mb-3 border-none bg-transparent">
+                    <div class="card col-sm-12 col-md-4 mb-3 border-none bg-transparent">
                         {!! file_get_contents(public_path($card['image']))!!}
                         <div class="card-body">
                             <p class="card-text text-center">{{ $card['description'] }}</p>
