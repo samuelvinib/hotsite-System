@@ -27,26 +27,3 @@
     </div>
 </div>
 
-<style>
-    .contact__container {
-        z-index: 3;
-        width: 100%;
-        max-width: 1920px;
-        background-color: #485A4B;
-        bottom: 0;
-        margin: 0 auto;
-    }
-    .contact__whatsapp{
-        background: #3A9713;
-        height: 100%;
-        margin: 0;
-        width: 40%;
-    }
-    .text-13{
-        font-size: 13px;
-    }
-    .text-17{
-        font-size: 17px;
-    }
-</style>
-

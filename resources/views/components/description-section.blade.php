@@ -20,9 +20,4 @@
         background-position: center;
         position: relative;
     }
-    .description__list{
-        background: #9DAC76;
-        font-family: 'Gotham',sans-serif;
-        line-height: 30px;
-    }
 </style>

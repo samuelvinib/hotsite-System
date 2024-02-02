@@ -1,0 +1,253 @@
+
+/*contact*/
+.contact__container {
+    z-index: 3;
+    width: 100%;
+    max-width: 1920px;
+    background-color: #485A4B;
+    bottom: 0;
+    margin: 0 auto;
+}
+.contact__whatsapp{
+    background: #3A9713;
+    height: 100%;
+    margin: 0;
+    width: 40%;
+}
+.text-13{
+    font-size: 13px;
+}
+.text-17{
+    font-size: 17px;
+}
+
+/*description*/
+.description__list{
+    background: #9DAC76;
+    font-family: 'Gotham',sans-serif;
+    line-height: 30px;
+}
+
+/*environments*/
+.border-none{
+    border: none;
+}
+.bg-none{
+    background: none;
+}
+.environments p, .environments h2{
+    color: #314839;
+    font-family: "Gotham", sans-serif;
+}
+.card-text{
+    color: #4A5B3A !important;
+}
+.environments button[type='submit'] {
+    height: 58px;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #AF5F48;
+}
+
+/*form*/
+.form-section__background-black-container {
+    overflow: hidden;
+    position: relative;
+}
+.form-section__background-black {
+    background: #000;
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-32%, -20%);
+    position: absolute;
+}
+.form__text-container {
+    margin-top: 50px;
+    width: 542px;
+}
+.form__h2 {
+    font-family: 'Gotham', sans-serif;
+    font-size: 29px;
+    text-align: end;
+    color: #D5D2C4;
+}
+.form__p {
+    font-family: 'Gotham', sans-serif;
+    font-size: 17px;
+    text-align: end;
+    color: #D5D2C4;
+}
+.form__formulario {
+    background: #485A4B;
+    width: 532px;
+}
+.form-section ::placeholder, select {
+    font-size: 14px !important;
+    font-family: 'Gotham', sans-serif;
+}
+.form-section button[type='submit'] {
+    height: 58px;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #AF5F48;
+}
+.form-section button[type='submit'] svg {
+    margin-left: 10px;
+    color: #fff;
+    width: 40px;
+    height: 25px;
+}
+@media (max-width: 1124px) {
+    .form-section__background-black {
+        transform: translate(0%, -10%);
+    }
+
+    .form__text-container {
+        margin-top: 100px;
+    }
+
+    .form-section__background-black-container {
+        overflow: scroll;
+    }
+}
+
+/*house-plan*/
+.house-plan{
+    background: #F5E8DF;
+}
+.house-plan .border-none{
+    border: none;
+}
+.house-plan .bg-none{
+    background: none;
+}
+.house-plan p, .house-plan h2{
+    color: #AF5F48;
+    font-family: "Gotham", sans-serif;
+}
+.house-plan .card-text{
+    color: #4A5B3A !important;
+    font-size: 11px;
+}
+.house-plan button[type='submit'] {
+    height: 58px;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #AF5F48;
+}
+.house-plan .card-img-top{
+    width: 40px;
+    height: 45px;
+}
+.house-plan .card svg{
+    width: 40px;
+    margin: 0 auto;
+}
+.house-plan button[type='submit'] {
+    height: 58px;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #AF5F48;
+}
+
+/*maps*/
+.maps button[type='submit'] {
+    height: 58px;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #AF5F48;
+}
+.maps li{
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+}
+
+/*structure*/
+.structure{
+    background: #F5E8DF;
+}
+.structure .border-none{
+    border: none;
+}
+.structure .bg-none{
+    background: none;
+}
+.structure p, .structure h2{
+    color: #AF5F48;
+    font-family: "Gotham", sans-serif;
+}
+.structure .card-text{
+    color: #4A5B3A !important;
+    font-size: 11px;
+}
+.structure button[type='submit'] {
+    height: 58px;
+    font-size: 13px;
+    white-space: nowrap;
+    background: #AF5F48;
+}
+.structure .card-img-top{
+    width: 40px;
+    height: 45px;
+}
+.structure .card svg{
+    width: 40px;
+    margin: 0 auto;
+}
+
+/*tourism*/
+.tourism p,.tourism h2{
+    font-family: 'Gotham', sans-serif;
+}
+.tourism h2{
+    color: #314839;
+}
+.tourism p{
+    color: #848D7B;
+}
+.tourism .card img{
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+.tourism .card p{
+    font-size: 12px;
+}
+
+/*footer*/
+footer{
+    margin-bottom: 80px;
+}
+
+/*header*/
+.header__container{
+    z-index: 2;
+}
+.header__h1 {
+    width: 100%;
+    background-color: #CBDAA1;
+    opacity: 86%;
+}
+
+.verde-serrano-text{
+    font-size: 42px;
+    font-family: 'Kefa', sans-serif;
+}
+
+.condominio-text{
+    font-size: 22px;
+    font-family: 'Impact', sans-serif;
+}
+
+.header__text-container{
+    padding: 5px 0;
+    margin-left: 10%;
+}
+
+.header__p{
+    padding: 0;
+    margin: 0;
+    color: #485A4B;
+    line-height: 0.8;
+}

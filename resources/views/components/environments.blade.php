@@ -20,25 +20,3 @@
     <a href="#form" class="text-decoration-none"><button href="#form" type="submit" class="btn btn-primary px-5 mx-auto text-center d-block">QUERO MAIS
             INFORMAÇÕES {!! config('images.icons.arrow-right') !!}</button></a>
 </div>
-
-<style>
-    .border-none{
-        border: none;
-    }
-    .bg-none{
-        background: none;
-    }
-    .environments p, .environments h2{
-        color: #314839;
-        font-family: "Gotham", sans-serif;
-    }
-    .card-text{
-        color: #4A5B3A !important;
-    }
-    .environments button[type='submit'] {
-        height: 58px;
-        font-size: 13px;
-        white-space: nowrap;
-        background: #AF5F48;
-    }
-</style>

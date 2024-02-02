@@ -8,6 +8,7 @@
 
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <script src="{{asset('assets/js/jquery.js')}}"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></script>
 
@@ -37,6 +38,9 @@
     @endcomponent
 
     @component('components.tourism')
+    @endcomponent
+
+    @component('components.maps')
     @endcomponent
 
     @yield('content')

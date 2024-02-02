@@ -21,11 +21,3 @@ $('#estado').change(function () {
 $(document).ready(function(){
     $('#tel').mask('(00) 00000-0000')
 });
-
-
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-    myInput.focus()
-})

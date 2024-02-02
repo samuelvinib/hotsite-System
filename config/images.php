@@ -17,5 +17,6 @@ return [
             'facebook' => file_get_contents(public_path('/assets/img/condominio-verde-serrano/icons/facebook.svg')),
             'instagram' => file_get_contents(public_path('/assets/img/condominio-verde-serrano/icons/instagram.svg')),
             'whatsapp' => file_get_contents(public_path('/assets/img/condominio-verde-serrano/icons/whatsapp.svg')),
+            'agency' => file_get_contents(public_path('/assets/img/condominio-verde-serrano/icons/NoPath.svg'))
             ]
 ];
