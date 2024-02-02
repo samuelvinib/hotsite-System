@@ -16,7 +16,7 @@ Route::group(['prefix' => 'empreendimentos'], function () {
 
     Route::get('/condominio-verde-serrano', function (){
         try {
-            return view('home');
+            return view('condominio-verde-serrano.hotsite');
         } catch (Exception $exception) {
             return response($exception, 500);
         }
@@ -26,4 +26,10 @@ Route::group(['prefix' => 'empreendimentos'], function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::put('/leads/{id}', [\App\Http\Controllers\LeadController::class, 'update'])
+    ->name('leads.edit');
+
+Route::delete('/leads/{id}', [\App\Http\Controllers\LeadController::class, 'destroy'])
+    ->name('leads.destroy');

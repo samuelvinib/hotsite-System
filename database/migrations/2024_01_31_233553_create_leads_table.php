@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('state');
             $table->string('city');
             $table->text('message');
+            $table->boolean('answered')->default('false');
             $table->timestamps();
         });
     }
