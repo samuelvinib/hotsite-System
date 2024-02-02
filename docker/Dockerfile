@@ -1,8 +1,9 @@
 FROM php:8.3.2-fpm
 
-RUN apt-get update; \
-    apt-get upgrade -y; \
-    apt-get install -y --no-install-recommends \
+# Instalando dependências
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y --no-install-recommends \
             curl \
             vim \
             openssl \
@@ -20,41 +21,41 @@ RUN apt-get update; \
             libssl-dev \
             libmcrypt-dev \
             libonig-dev \
-            libgmp-dev
+            libgmp-dev \
+            npm \
+            nodejs
 
+# Limpeza do cache do apt
 RUN rm -rf /var/lib/apt/lists/*
 
-# RUN docker-php-ext-install pdo;
-RUN docker-php-ext-install pdo_mysql;
-RUN docker-php-ext-install pdo_pgsql;
-RUN docker-php-ext-install bcmath;
-#RUN docker-php-ext-install json;
-RUN docker-php-ext-install gmp;
-RUN docker-php-ext-install ctype;
-RUN docker-php-ext-install zip;
-RUN docker-php-ext-install mbstring;
-#RUN docker-php-ext-install tokenizer;
-RUN docker-php-ext-install xml;
+# Instalando extensões PHP
+RUN docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install pdo_pgsql \
+    && docker-php-ext-install bcmath \
+    && docker-php-ext-install gmp \
+    && docker-php-ext-install ctype \
+    && docker-php-ext-install zip \
+    && docker-php-ext-install mbstring \
+    && docker-php-ext-install xml
 
-    # Install the PHP gd library
+# Instalando a biblioteca GD do PHP
 RUN docker-php-ext-configure gd \
             --prefix=/usr \
             --with-jpeg \
-            --with-freetype; \
-    docker-php-ext-install gd; \
-    php -r 'var_dump(gd_info());'
+            --with-freetype \
+    && docker-php-ext-install gd \
+    && php -r 'var_dump(gd_info());'
 
-#RUN docker-php-ext-configure zip --with-libzip
+# Instalando Composer
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+    && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
+    && php -r "unlink('composer-setup.php');" \
+    && composer self-update 2.6.6
 
-RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-RUN php -r "unlink('composer-setup.php');"
-RUN composer self-update 2.6.6
-
+# Diretório de trabalho e cópia do código-fonte
 RUN mkdir /opt/crm-api
-
 WORKDIR /opt/crm-api
-
 COPY . .
 
+# Expondo a porta 80 (se necessário)
 EXPOSE 80

@@ -13,6 +13,7 @@ services:
     volumes:
      - ./:/opt/crm-api
      - /opt/crm-api/vendor
+     - /opt/crm-api/node_modules
     networks:
      - crm_api
     command: "/bin/sh /opt/crm-api/scripts/entrypoint.sh"
