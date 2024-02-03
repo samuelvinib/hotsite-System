@@ -22,7 +22,10 @@ class LeadController extends Controller
     public function update(Request $request, $id)
     {
         $lead = $this->leadModel::findOrFail($id);
-        $lead->update($request->all());
+        $lead->update([
+            "answered"=>true
+        ]);
+        $request->session()->flash('message', 'Lead alterado com sucesso!');
         return redirect()->back();
     }
 

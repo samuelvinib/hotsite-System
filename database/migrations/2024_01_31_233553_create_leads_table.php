@@ -4,11 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateLeadsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up()
     {
         Schema::create('leads', function (Blueprint $table) {
@@ -18,16 +15,13 @@ return new class extends Migration
             $table->string('state');
             $table->string('city');
             $table->text('message');
-            $table->boolean('answered')->default('false');
+            $table->boolean('answered')->default(false);
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('leads');
     }
-};
+}
