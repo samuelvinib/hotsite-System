@@ -40,7 +40,7 @@ Execute o seguinte comando para buildar o projeto:
 Após o build acesse o container da Api:
 
    ```bash
-  docker exec -it crm_api sh
+  docker exec -it crm-api sh
   ```
 
 ## Passo 4
