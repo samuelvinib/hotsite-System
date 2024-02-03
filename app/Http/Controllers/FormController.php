@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\LeadService;
+
 class FormController extends Controller
 {
     protected $leadService;
-    public function __construct(LeadService $leadService){
-        $this->leadService = $leadService;
 
+    public function __construct(LeadService $leadService)
+    {
+        $this->leadService = $leadService;
     }
 
     public function store(Request $request)
@@ -24,22 +26,17 @@ class FormController extends Controller
                 'message' => 'nullable|string',
             ]);
 
-        } catch (\Exception $e) {
+            // Remover caracteres especiais do campo de mensagem
+            $message = $request->input('message');
+            $cleanMessage = preg_replace('/[^\p{L}\p{N}\s]/u', '', $message);
+            $request->merge(['message' => $cleanMessage]);
 
+            $this->leadService->createLead($request->all());
+
+            $request->session()->flash('message', 'Formulário enviado com sucesso!');
+            return redirect()->back();
+        } catch (\Exception $e) {
             return response()->json(['errors' => $e->errors()], 422);
         }
-
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'state' => 'required|string|max:255',
-            'city' => 'required|string|max:255',
-            'message' => 'nullable|string',
-        ]);
-
-        $this->leadService->createLead($request->all());
-
-        $request->session()->flash('message', 'Formulário enviado com sucesso!');
-        return redirect()->back();
     }
 }

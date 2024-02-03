@@ -60,11 +60,11 @@
                                     <td>{{ $lead->city }}</td>
                                     <td>
                                         <div>
-                                            {{ \Illuminate\Support\Str::limit($lead->message, 20) }}
-                                            @if (strlen($lead->message) > 10)
+                                            {{ \Illuminate\Support\Str::limit($lead->message, 15) }}
+                                            @if (strlen($lead->message) > 15)
                                                 <button type="button" class="btn btn-link modal-btn" data-bs-toggle="modal"
                                                         data-bs-target="#messageModal"
-                                                        onclick="showFullMessage('{{ $lead->message }}')">Ver mais
+                                                        onclick="showFullMessage('{{ nl2br(trim($lead->message)) }}')">Ver mais
                                                 </button>
                                             @endif
                                         </div>
@@ -124,7 +124,7 @@
     <!-- Script para exibir a mensagem completa no modal -->
     <script>
         function showFullMessage(message) {
-            var modalBody = document.getElementById('fullMessage');
+            let modalBody = document.getElementById('fullMessage');
             modalBody.textContent = message;
         }
 
